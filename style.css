@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+div {
+    background-color: rgba(234, 240, 234, 0.5);
+    width: max-content;
+    display: flex;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+.bg_video{
+    position: fixed; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -1000;
+    background: url("./assets/running.jpg") no-repeat;
+    background-size: cover; 
+}
+/* img {
+    width: 375px;
+    border-radius: 20px;
+    display: block;
+    margin: 10px auto;
+} */
+main {
+    width: 375px;
+    background-color: rgba(49, 54, 56, 0.5);
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+label {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+}
+input {
+    color: #313638;
+    width: 49%;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    border: none;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+select {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+.calc-button {
+    width: 100%;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #eaf0ea;
+    color: #313638;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.8;
+}
+button:active {
+    opacity: 0.6;
+}
+section {
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p {
+    color: #ffffff;
+    font-size: 18px;
+}
+.new-rp {
+    border-radius: 15px;
+    margin: 15px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+}
+.alert-message {
+    display: none;
+}
+.first-paragraph {
+    display: none;
+    text-align: center;
+}
+.reset-button {
+    width: 50%;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #eaf0ea;
+    color: #313638;
+    border: none;
+    cursor: pointer;
+    display: none;
+}

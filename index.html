@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="./assets/running.ico" rel="icon" type="image/x-icon" />
+    <title>Previsor de RP</title>
+</head>
+
+<body>
+    <div>
+        <video autoplay muted loop poster="./assets/running.jpg" class="bg_video">
+            <source src="./assets/running-video.mp4" type="video/mp4">
+            </video>
+        <main>
+            <label>
+                Pace (min/km)<br>
+                <input type="number" class="minutes" placeholder="Minutos" min="0" max="10" size="2" required>
+                <input type="number" class="seconds" placeholder="Segundos" min="0" max="59" size="2" required>
+            </label>
+            <label>
+                Escolha seu próximo desafio <br>
+                <select class="race-options" required>
+                    <option selected disabled>Distância</option>
+                    <option value="5">5km</option>
+                    <option value="10">10km</option>
+                    <option value="21">21km</option>
+                    <option value="42">42km</option>
+                </select>
+            </label>
+            <button class="calc-button">Calcular seu novo RP</button>
+            <section>
+                <p class="first-paragraph">Se você correr os <b class="distance-selected">Km</b> no pace de <b
+                        class="pace-time">00:00</b> sua corrida terminará em: </p>
+                <p class="new-rp">00:00:00</p>
+                <p class="alert-message">WOW! Você está voando, boa sorte!</p>
+            </section>
+            <button class="reset-button" type="reset">Tentar novamente</button>
+        </main>
+    </div>
+</body>
+<script src="scripts.js"></script>
+</html>
